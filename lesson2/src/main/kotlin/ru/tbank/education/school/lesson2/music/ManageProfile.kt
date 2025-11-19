@@ -27,4 +27,5 @@ fun manageProfile(user: User) {
         }
         println(user.getSubscriptionStatus())
     }
+    return;
 }
