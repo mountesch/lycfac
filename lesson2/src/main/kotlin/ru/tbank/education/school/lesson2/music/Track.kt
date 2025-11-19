@@ -14,4 +14,6 @@ class Track (
     override fun info(): String { // Returns full information about this track
         return "Track: $fullTitle ${durationSec}s"
     }
+
+    fun getDuration(): Int = durationSec // Getting the duration of this track
 }
