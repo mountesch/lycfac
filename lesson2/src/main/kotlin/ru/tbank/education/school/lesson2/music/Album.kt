@@ -1,6 +1,6 @@
 package ru.tbank.education.school.lesson2.music
 
-class Album (
+data class Album (
     val name: String,
     private val tracks: MutableList<Track> = mutableListOf()
 ) {
