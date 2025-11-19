@@ -2,7 +2,7 @@ package ru.tbank.education.school.lesson2.music
 
 class Track (
     title: String,
-    durationSec: Int,
+    durationSec: Int?,
     private var artist: String
 ) : AudioItem(title, durationSec) {
     constructor(title: String, durationSec: Int) :

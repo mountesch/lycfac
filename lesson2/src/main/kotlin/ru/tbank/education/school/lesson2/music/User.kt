@@ -2,7 +2,7 @@ package ru.tbank.education.school.lesson2.music
 
 class User (
     val name: String,
-    private val playlist: Playlist
+    val playlist: Playlist
 ) {
 
     // Managing user's playlist
