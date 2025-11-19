@@ -15,5 +15,5 @@ class Track (
         return "Track: $fullTitle ${durationSec}s"
     }
 
-    fun getDuration(): Int = durationSec // Getting the duration of this track
+    fun getDuration(): Int? = durationSec // Getting the duration of this track
 }

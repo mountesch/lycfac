@@ -1,5 +1,7 @@
 package ru.tbank.education.school.lesson2.music
 
+import User
+
 fun manageFavourite(user: User) {
     println("""What do ypu want to do with your playlist?
 Choose an option:

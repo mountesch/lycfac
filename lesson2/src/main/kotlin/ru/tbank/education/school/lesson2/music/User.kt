@@ -1,6 +1,8 @@
-package ru.tbank.education.school.lesson2.music
+import ru.tbank.education.school.lesson2.music.AudioItem
+import ru.tbank.education.school.lesson2.music.Playlist
+import ru.tbank.education.school.lesson2.music.Subscription
 
-class User (
+data class User(
     val name: String,
     val playlist: Playlist
 ) {
@@ -24,8 +26,9 @@ class User (
         println("You've been unsubscribed")
     }
 
-    fun getSubscriptionStatus() {
-        return (subscriptionStatus?.let { "Currently subscribed to ${it.name} plan" }
-            ?: "$name has no subscription") as Unit
+    fun getSubscriptionStatus(): String {
+        return subscriptionStatus?.let {
+            "Currently subscribed to ${it.name} plan"
+        } ?: "$name has no subscription"
     }
 }

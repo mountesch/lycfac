@@ -1,5 +1,6 @@
 package ru.tbank.education.school.lesson2.music
 
+import User
 import javax.swing.plaf.basic.BasicHTML
 
 fun manageProfile(user: User) {
